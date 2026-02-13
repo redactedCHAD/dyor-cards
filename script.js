@@ -10,8 +10,8 @@ class CardStreamController {
     this.cardLine = document.getElementById("cardLine");
 
     // Start cards halfway between left edge and scanner (scanner is at window.innerWidth / 2)
-    this.position = -(window.innerWidth / 4); // Halfway between 0 and scanner position
-    this.velocity = 120;
+    this.position = -(window.innerWidth / 8); // Halfway between 0 and scanner position
+    this.velocity = 320;
     this.direction = 1; // Moving right (positive direction)
     this.isAnimating = true;
     this.isDragging = false;
@@ -20,7 +20,7 @@ class CardStreamController {
     this.lastMouseX = 0;
     this.mouseVelocity = 0;
     this.friction = 0.95;
-    this.minVelocity = 30;
+    this.minVelocity = 90;
 
     this.containerWidth = 0;
     this.cardLineWidth = 0;
